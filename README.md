@@ -1,46 +1,81 @@
-# Getting Started with Create React App
+# Kaur_Manpreet_Coding_Assignment12
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a React and Storybook Component Library created for WEBD-3012 Business Systems Build and Testing.
 
-In the project directory, you can run:
+## Components Included
 
-### `npm start`
+* Button
+* Label
+* Text
+* Dropdown
+* RadioButton
+* Img
+* HeroImage
+* Card
+* Table
+* TableHeader
+* TableRow
+* TableCell
+* TableFooter
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Setup Steps
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Create React Application
 
-### `npm test`
+npx create-react-app kaur_manpreet_coding_assignment12 --template typescript
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Enter Project Folder
 
-### `npm run build`
+cd kaur_manpreet_coding_assignment12
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install Storybook
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npx storybook@latest init
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install Styled Components
 
-### `npm run eject`
+npm install styled-components
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+npm install --save-dev @types/styled-components
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Install Testing Package
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+npm install --save-dev jest-styled-components
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Run Storybook
 
-## Learn More
+npm run storybook
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Run Tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm test
+
+### Create Production Build
+
+npm run build
+
+### Build Docker Image
+
+docker build -t kaur_manpreet_coding_assignment12 .
+
+### Run Docker Container
+
+docker run --name kaur_manpreet_coding_assignment12 -p 8083:8083 kaur_manpreet_coding_assignment12
+
+## Docker Information
+
+Working Directory:
+
+/kaur_manpreet_ui_garden
+
+Port:
+
+8083
+
+## Author
+
+Manpreet Kaur
+WEBD-3012
+Coding Assignment 12
